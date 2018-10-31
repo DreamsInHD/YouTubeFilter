@@ -13,6 +13,6 @@ loading might take a while.
 # Screenshots
 
 <p float="left">
-  <img src="https://github.com/JonasDeRoover/YouTubeFilter/blob/master/images/video_screen.PNG" width="400" height="800">
+  <img src="https://github.com/JonasDeRoover/YouTubeFilter/blob/master/images/video_screen.PNG" width="400" height="790">
   <img src="https://github.com/JonasDeRoover/YouTubeFilter/blob/master/images/filter_screen.PNG" width="410" height="795">
 </p>
