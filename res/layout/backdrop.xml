@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/min_views_text_input_layout"
+        style="@style/TextInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/min_views_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/min_amount_of_views" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/max_views_text_input_layout"
+        style="@style/TextInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/max_views_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/max_amount_of_views" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/min_likes_text_input_layout"
+        style="@style/TextInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/min_likes_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/min_amount_of_likes" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/max_likes_text_input_layout"
+        style="@style/TextInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/max_likes_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/max_amount_of_likes" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/min_dislikes_text_input_layout"
+        style="@style/TextInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/min_dislikes_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/min_amount_of_dislikes" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/max_dislikes_text_input_layout"
+        style="@style/TextInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/max_dislikes_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/max_amount_of_dislikes" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:text="@string/order_by" />
+
+        <RadioGroup
+            android:id="@+id/order_by_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/views_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/views" />
+
+            <RadioButton
+                android:id="@+id/likes_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/likes" />
+
+            <RadioButton
+                android:id="@+id/dislikes_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dislikes" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/button_search"
+        style="@style/Widget.YouTubeFilter.Button.MaterialButton.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/search" />
+</merge>

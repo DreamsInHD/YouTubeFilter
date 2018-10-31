@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/video_page_menu_item"
+        android:icon="@drawable/ic_videos"
+        android:title="@string/videos" />
+    <item
+        android:id="@+id/filter_page_menu_item"
+        android:icon="@drawable/filter"
+        android:title="@string/filter" />
+</menu>

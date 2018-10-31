@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="video_title_text_size">18sp</dimen>
+    <dimen name="backdrop_reveal_height">150dp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+</resources>

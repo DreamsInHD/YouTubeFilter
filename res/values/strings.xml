@@ -1,0 +1,35 @@
+<resources>
+    <string name="yf_app_name">YoutubeFilter</string>
+    <string name="views_text">views</string>
+    <string name="amount_of_views">amount of views: </string>
+    <string name="amount_of_likes">amount of likes: </string>
+    <string name="amount_of_dislikes">amount of dislikes: </string>
+    <string name="filter_dialog_title">Filter Options</string>
+    <string name="filter_videos">Filter Videos</string>
+    <string name="order_by">Order by:</string>
+    <string name="views">Views</string>
+    <string name="likes">Likes</string>
+    <string name="dislikes">Dislikes</string>
+    <string name="min_amount_of_views">Minimum amount of views</string>
+    <string name="max_amount_of_views">Maximum amount of views</string>
+    <string name="min_amount_of_likes">Minimum amount of likes</string>
+    <string name="max_amount_of_likes">Maximum amount of likes</string>
+    <string name="min_amount_of_dislikes">Minimum amount of dislikes</string>
+    <string name="max_amount_of_dislikes">Maximum amount of dislikes</string>
+    <string name="not_a_valid_number">Not a valid number</string>
+    <string name="about_this_app">About this app</string>
+    <string name="videos">Videos</string>
+    <string name="filter">Filter</string>
+    <string name="no_internet_connection">No internet connection available</string>
+    <string name="try_again">Try again</string>
+    <string name="search">Search</string>
+    <string-array name="min_max_array">
+        <item>Min</item>
+        <item>Max</item>
+    </string-array>
+    <string-array name="order_by_array">
+        <item>Views</item>
+        <item>Likes</item>
+        <item>Dislikes</item>
+    </string-array>
+</resources>
