@@ -1,7 +1,5 @@
 package com.dreamsinhd.android.youtubefilter.networking;
 
-import android.util.Log;
-
 import com.dreamsinhd.android.youtubefilter.BuildConfig;
 import com.dreamsinhd.android.youtubefilter.model.Filter;
 import com.dreamsinhd.android.youtubefilter.model.FilterUtils;
@@ -72,7 +70,6 @@ public class YouTubeFetcher {
             } else {
                 // Random query for increased randomness
                 String query = FilterUtils.getORQuery(15);
-                Log.d(TAG, "Query: " + query);
                 if (filter.getSearch() == null) {
                     search.setQ(query);
                 }
@@ -85,7 +82,6 @@ public class YouTubeFetcher {
             searchResults = searchResponse.getItems();
 
         } catch (IOException e) {
-            Log.e(TAG, "Couldn't fetch videos because of IOException", e);
         }
     }
 
@@ -115,7 +111,7 @@ public class YouTubeFetcher {
 
                 FilterUtils.filterVideoList(videos, filter);
             } catch (IOException e) {
-                Log.e(TAG, "There was an error while requesting the videos", e);
+
             }
         }
         return videos;
@@ -131,7 +127,6 @@ public class YouTubeFetcher {
             getYouTubeResults();
             FilterUtils.removeDuplicateVideos(videos);
             videos.addAll(getVideos());
-            Log.d(TAG, "Amount of videos in list: " + videos.size());
             if (videos.size() > prevAmount) {
                 videoFetchedListener.newVideos(videos.size());
                 prevAmount = videos.size();

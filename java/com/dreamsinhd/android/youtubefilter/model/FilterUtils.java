@@ -59,35 +59,29 @@ public class FilterUtils {
             while (iterator.hasNext()) {
                 Video currentVideo = iterator.next();
                 if (filter.getMaxViews() != null && (currentVideo.getStatistics().getViewCount() == null || filter.getMaxViews().compareTo(currentVideo.getStatistics().getViewCount()) < 0)) {
-                    Log.d(TAG, "Video removed because too many views");
                     iterator.remove();
                     continue;
                 }
                 if (filter.getMinViews() != null && (currentVideo.getStatistics().getViewCount() == null || filter.getMinViews().compareTo(currentVideo.getStatistics().getViewCount()) > 0)) {
-                    Log.d(TAG, "Video removed because not enough views");
                     iterator.remove();
                     continue;
                 }
 
                 if (filter.getMaxLikes() != null && (currentVideo.getStatistics().getLikeCount() == null || filter.getMaxLikes().compareTo(currentVideo.getStatistics().getLikeCount()) < 0)) {
-                    Log.d(TAG, "Video removed because too many likes");
                     iterator.remove();
                     continue;
                 }
                 if(filter.getMinLikes() != null && (currentVideo.getStatistics().getLikeCount() == null || filter.getMinLikes().compareTo(currentVideo.getStatistics().getLikeCount()) > 0)) {
-                    Log.d(TAG, "Video removed because not enough likes");
                     Log.d(TAG, "Amount of likes: " + currentVideo.getStatistics().getLikeCount() + "| Is Max Likes: " + (filter.getMaxLikes() == null ? "no" : "yes") + " | Allowed: " + filter.getMaxLikes());
                     iterator.remove();
                     continue;
                 }
 
                 if (filter.getMaxDislikes() != null && (currentVideo.getStatistics().getDislikeCount() == null || filter.getMaxDislikes().compareTo(currentVideo.getStatistics().getDislikeCount()) < 0)) {
-                    Log.d(TAG, "Video removed because too many dislikes");
                     iterator.remove();
                     continue;
                 }
                 if(filter.getMinDislikes() != null && (currentVideo.getStatistics().getDislikeCount() == null || filter.getMinDislikes().compareTo(currentVideo.getStatistics().getDislikeCount()) > 0)) {
-                    Log.d(TAG, "Video removed because not enough dislikes");
                     Log.d(TAG, "Amount of dislikes: " + currentVideo.getStatistics().getDislikeCount() + "| Is Max Dislikes: " + (filter.getMaxDislikes() == null ? "no" : "yes") + " | Allowed: " + filter.getMaxDislikes());
                     iterator.remove();
                     continue;

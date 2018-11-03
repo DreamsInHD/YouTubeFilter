@@ -13,7 +13,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -148,7 +147,6 @@ public class VideoListFragment extends Fragment {
 
 
         tryAgainButton.setOnClickListener(view -> {
-            Log.d(TAG, "button cliiiiiicked");
             ((BottomNavActivity) getActivity()).getBottomNavigationView().setSelectedItemId(R.id.filter_page_menu_item);
         });
 
